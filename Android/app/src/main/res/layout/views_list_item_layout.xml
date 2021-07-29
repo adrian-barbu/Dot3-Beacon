@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:id="@+id/viewImageImageView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="image URL"
+        android:id="@+id/viewImageURLTextView"
+        android:layout_below="@+id/viewImageImageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="View Name"
+        android:id="@+id/viewNameTextView"
+        android:layout_below="@+id/viewImageURLTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ViewDescription"
+        android:id="@+id/viewDescriptionTextView"
+        android:layout_below="@+id/viewNameTextView"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentStart="true"
+        android:ellipsize="end"
+        android:maxLines="2"
+        />
+</RelativeLayout>

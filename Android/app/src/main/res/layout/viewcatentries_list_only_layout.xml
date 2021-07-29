@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/viewCatImage"
+            android:layout_alignParentTop="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher"
+    />
+
+    <include layout="@layout/list_header"
+        android:id="@+id/viewCatNameHeaderLinearLayout"
+             android:layout_below="@+id/viewCatImage"
+
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+    />
+    <!--
+             android:layout_height="35dp"
+    -->
+
+    <ViewAnimator
+        android:id="@+id/viewCatTextAndEntries"
+            android:layout_below="@+id/viewCatNameHeaderLinearLayout"
+            android:layout_above="@+id/delimeter_placeholder"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ScrollView
+            android:id="@+id/viewCatTextScrollView"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <!--
+            style="@style/Widget.MessageTile"
+            -->
+            <TextView
+                android:id="@+id/viewCatText"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:singleLine="false"
+
+                android:textColor="@color/grey50"
+                android:padding="5dp"
+                />
+                <!--
+                style="@style/Widget.Message"
+                -->
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/list_container"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <!--
+            Note, the layout is used by an fragment derived from ListFragment,
+            it must have a ListView with id="@android:id/list" because the base class ListFragment wants it.
+            -->
+            <ListView
+                android:id="@android:id/list"
+                android:background="@color/opaque_back32"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="false"
+
+                android:fastScrollEnabled="true"
+                android:fastScrollAlwaysVisible="true"
+                />
+        </LinearLayout>
+    </ViewAnimator>
+
+    <!-- Note this element delimeter_placeholder is here just to help make the layout. -->
+    <View
+        android:id="@+id/delimeter_placeholder"
+            android:layout_alignParentBottom="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>
+

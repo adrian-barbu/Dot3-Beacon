@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolBarContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fadingEdgeLength="30dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Home Button -->
+
+        <Button
+            android:id="@+id/btnHome"
+            style="@style/toolbar_button"
+            android:drawableTop="@mipmap/home_tab_icon"
+            android:onClick="onClick"
+            android:text="@string/home" />
+
+        <!-- Place Button -->
+
+        <Button
+            android:id="@+id/btnPlace"
+            style="@style/toolbar_button"
+            android:drawableTop="@mipmap/places_icon"
+            android:onClick="onClick"
+            android:text="@string/places" />
+
+        <!-- Discover Button -->
+
+        <Button
+            android:id="@+id/btnDiscover"
+            style="@style/toolbar_button"
+            android:drawableTop="@mipmap/discover_tab_icon"
+            android:onClick="onClick"
+            android:text="@string/discover" />
+
+        <!-- Map Button -->
+
+        <Button
+            android:id="@+id/btnMap"
+            style="@style/toolbar_button"
+            android:drawableTop="@mipmap/map_tab_icon"
+            android:onClick="onClick"
+            android:text="@string/map" />
+
+    </LinearLayout>
+</HorizontalScrollView>

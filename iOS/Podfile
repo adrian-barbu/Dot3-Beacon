@@ -1,0 +1,11 @@
+platform :ios, '7.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+pod 'SDWebImage', '~>3.6'
+pod 'pop', '~> 1.0'
+pod 'Fabric'
+pod 'Crashlytics'
+
+
+

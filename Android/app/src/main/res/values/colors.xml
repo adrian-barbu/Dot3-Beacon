@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main Colors -->
+
+    <color name="home_header">#275E37</color>
+    <color name="place_header">#669900</color>
+    <color name="discover_header">#008bbf</color>
+    <color name="discover_header_transparent">#cc23242a</color>
+    <color name="discover_transparent">#dd00888a</color>
+    <color name="map_header">#00888A</color>
+    <color name="map_switch_color">#45888a</color>
+
+    <color name="discover_more_info">#aaffffff</color>
+    <color name="discover_more_info_pressed">#aaececec</color>
+
+    <color name="discover_back">#ffffff</color>
+    <color name="discover_back_pressed">#aaececec</color>
+
+    <color name="discover_text_bg">#d7d7d7</color>
+
+    <!-- Circle Indicator -->
+    <color name="default_circle_indicator_fill_color">@android:color/white</color>
+    <color name="default_circle_indicator_page_color">#319c9e</color>
+    <color name="default_circle_indicator_stroke_color">@android:color/white</color>
+
+    <color name="toolbar_button_normal">#555555</color>
+    <color name="toolbar_button_selected">#7da828</color>
+
+    <color name="Red">#FF5933</color>
+    <color name="Green">#59FF00</color>
+    <color name="GreenLight">#99FF77</color>
+    <color name="Blue">#7920FF</color>
+    <color name="Yellow">#FFFF00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey90">#222222</color>
+    <color name="grey70">#555555</color>
+    <color name="grey50">#777777</color>
+    <color name="grey10">#CCCCCC</color>
+
+    <color name="oceania_polynesia_borabora_light2">#00E1EBF4</color> <!-- 225-235-244 -->
+    <color name="oceania_polynesia_borabora_light1">#006699C8</color> <!-- 102-153-200 -->
+    <color name="oceania_polynesia_borabora_dark1">#FF2B5275</color> <!-- 43-82-117 -->
+    <color name="oceania_polynesia_borabora_dark2">#FF1A3248</color> <!-- 26-50-72 -->
+
+    <color name="transparent">#00000000</color>
+    <!-- looks the same as "transparent":
+    <color name="semi_transparent">#33333333</color>
+    -->
+    <color name="opaque_back1">#29000000</color>
+    <color name="opaque_back2">#AA000000</color>
+    <color name="opaque_back3">#AA777777</color>
+    <!-- <color name="opaque_back31">#70555555</color> -->
+    <color name="opaque_back31">#DD555555</color>
+    <color name="opaque_back32">#BBFFFFFF</color>
+    <!--
+    <color name="opaque_back4">#EE000000</color>
+    -->
+    <color name="opaque_back4">#CC000000</color>
+    
+    
+    <!-- See: http://thiranjith.com/2011/07/15/actionbar-design-pattern-example-for-android/ -->
+    <color name="actionbar_separator">#121e56</color>
+    <color name="actionbar_background_start">#2650cd</color> <!-- #1a2c8b -->
+    <color name="actionbar_background_end">#1a2c8b</color> <!-- #2650cd -->
+    <color name="actionbar_background_item_pressed_start">#EE7600</color> <!-- #FF7F00 -->
+    <color name="actionbar_background_item_pressed_end">#FF7F00</color> <!-- #EE7600 -->
+    <!--
+    <color name="actionbar_title">#FFFFFF</color>
+    -->
+
+    <color name="ColorPrimary">#009090</color>
+    <color name="ColorPrimaryDark">#006060</color>
+    <color name="tabsScrollColor">#606060</color>
+    <color name="tabsDividerColor">#404D40</color>
+    
+</resources>

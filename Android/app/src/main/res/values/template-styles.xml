@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Activity themes -->
+
+    <!-- TODO? Use style Theme.AppCompat.Light, to support the Up Button in the Action Bar?
+    See Navigating Up with the App Icon, at: http://developer.android.com/intl/ru/guide/topics/ui/actionbar.html#Home
+    android:theme="@style/AppTheme"
+    android:theme="@style/Theme.AppCompat.Light"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+    -->
+
+    <style name="Theme.Base" parent="android:Theme.Light" />
+    <style name="Theme.Sample" parent="Theme.Base" />
+
+
+    <!-- Widget styling -->
+
+    <style name="Widget" />
+
+    <style name="Widget.Message">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+
+    <style name="Widget.MessageTile">
+        <item name="android:background">@drawable/tile</item>
+        <item name="android:shadowColor">#7F000000</item>
+        <item name="android:shadowDy">-3.5</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+</resources>

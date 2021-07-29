@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    -->
+
+    <!--
+        Custom Title Bar: Hide the default title bar and include the ActionBarOldCustom as a View:
+    -->
+    <com.dot3digital.ui.actionbar.widget.ActionBarOldCustom
+        android:layout_alignParentTop="true"
+        
+        android:id="@+id/actionBar" 
+        android:layout_width="match_parent" 
+        android:layout_height="@dimen/actionbar_height"  
+    />
+
+
+    <include layout="@layout/toolbar"
+         android:layout_alignParentBottom="true"
+
+         android:id="@+id/toolBarContainer"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+    />
+
+
+    <LinearLayout 
+        android:layout_below="@+id/actionBar" android:layout_above="@+id/toolBarContainer" 
+        
+        android:id="@+id/background_picture"
+        android:orientation="vertical"
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <!--
+                        android:background="@drawable/winter_in_waterloo__leftside"
+        -->
+
+        <!--
+        Note, the layout is used by an activity derived from ListActivity,
+        it must have a ListView with id="@android:id/list" because the base class ListActivity
+        wants it: mList = (ListView)findViewById(com.android.internal.R.id.list);
+        -->
+        <ListView
+            android:id="@android:id/list"
+            android:background="@color/opaque_back32"
+            
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawSelectorOnTop="false"
+            
+            
+            android:divider="@color/grey50"
+            android:dividerHeight="1dp"
+            
+            android:fastScrollEnabled="true"
+            android:fastScrollAlwaysVisible="true"
+        />
+    </LinearLayout>
+    
+ </RelativeLayout>
+

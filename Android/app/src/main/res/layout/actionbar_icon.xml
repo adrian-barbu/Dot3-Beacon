@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar_item"
+    
+    android:layout_width="44dip"
+    android:layout_height="44dip"
+    android:layout_marginLeft="1dip"
+     
+    android:padding="4dip"
+     
+    android:layout_centerVertical="true"
+    android:singleLine="true" 
+    android:visibility="visible"
+    />
+    <!--
+                    android:background="@drawable/actionbar_png_btn"
+    -->
+    <!--
+    android:background="@drawable/actionbar_btn" 
+    android:background="@drawable/button_background_blue" 
+    android:background="@drawable/button_background_blue_2" 
+
+    I've replaced actionbar_btn.xml with a home-made image button_background_blue.png, 
+    because of the bug: 
+    when using the actionbar_btn.xml, its shape with a gradient defined by 
+    the actionbar_btn_normal.xml, either doesn't render at all or renders as backgrounds 
+    of the list elements which actually are defined with transparent background
+    
+    android:scaleType="fitXY"
+    -->

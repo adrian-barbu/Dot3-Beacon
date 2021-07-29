@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <!--
+        Custom Title Bar: Hide the default title bar and include the ActionBar as a View:
+    -->
+    <com.dot3digital.ui.actionbar.widget.ActionBarOldCustom
+        android:layout_alignParentTop="true"
+
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        />
+
+    <ScrollView
+        android:id="@+id/testVScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:fadingEdgeLength="30dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/toolBar"
+            android:orientation="vertical"
+            android:padding="3dip"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+
+            <Button android:id="@+id/addGeofences"
+                    android:drawableTop="@mipmap/world_aqua"
+                    android:onClick="onMyClick"
+                    android:textColor="@color/black" android:text="addGeofences"
+                    android:textSize="10sp"
+                    android:layout_marginRight="3dip"
+                    android:padding="3dip"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                />
+
+            <Button android:id="@+id/removeGeofences"
+                    android:drawableTop="@mipmap/world"
+                    android:onClick="onMyClick"
+                    android:textColor="@color/black" android:text="removeGeofences"
+                    android:textSize="10sp"
+                    android:layout_marginRight="3dip"
+                    android:padding="3dip"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                />
+
+            <Button android:id="@+id/getViewWithViewKey"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:onClick="onMyClick"
+                    android:textColor="@color/black" android:text="getViewWithViewKey"
+                    android:textSize="10sp"
+                    android:layout_marginRight="3dip"
+                    android:padding="3dip"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                />
+
+            <Button android:id="@+id/getFleetArrayWithCompletion"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:onClick="onMyClick"
+                    android:textColor="@color/black" android:text="getFleetArrayWithCompletion"
+                    android:textSize="10sp"
+                    android:layout_marginRight="3dip"
+                    android:padding="3dip"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                />
+
+            <Button android:id="@+id/getZoneWithZoneKey"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:onClick="onMyClick"
+                    android:textColor="@color/black" android:text="getZoneWithZoneKey"
+                    android:textSize="10sp"
+                    android:layout_marginRight="3dip"
+                    android:padding="3dip"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                />
+
+            <Button android:id="@+id/getEntriesArrayWithZoneKey"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:onClick="onMyClick"
+                    android:textColor="@color/black" android:text="getEntriesArrayWithZoneKey"
+                    android:textSize="10sp"
+                    android:layout_marginRight="3dip"
+                    android:padding="3dip"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                />
+
+            <Button android:id="@+id/getEntriesArrayWithPlaceKey"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:onClick="onMyClick"
+                    android:textColor="@color/black" android:text="getEntriesArrayWithPlaceKey"
+                    android:textSize="10sp"
+                    android:layout_marginRight="3dip"
+                    android:padding="3dip"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                />
+
+            <Button android:id="@+id/getGeofencesArrayWithCompletion"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:onClick="onMyClick"
+                    android:textColor="@color/black" android:text="getGeofencesArrayWithCompletion"
+                    android:textSize="10sp"
+                    android:layout_marginRight="3dip"
+                    android:padding="3dip"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                />
+
+            <Button android:id="@+id/getPlacesArrayWithCompletion"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:onClick="onMyClick"
+                    android:textColor="@color/black" android:text="getPlacesArrayWithCompletion"
+                    android:textSize="10sp"
+                    android:layout_marginRight="3dip"
+                    android:padding="3dip"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                />
+
+            <Button android:id="@+id/getPlaceListingWithCompletion"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:onClick="onMyClick"
+                    android:textColor="@color/black" android:text="getPlaceListingWithCompletion"
+                    android:textSize="10sp"
+                    android:layout_marginRight="3dip"
+                    android:padding="3dip"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                />
+
+            <Button android:id="@+id/getPlaceWithPlaceKey"
+                    android:drawableTop="@mipmap/ic_launcher"
+                    android:onClick="onMyClick"
+                    android:textColor="@color/black" android:text="getPlaceWithPlaceKey"
+                    android:textSize="10sp"
+                    android:layout_marginRight="3dip"
+                    android:padding="3dip"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

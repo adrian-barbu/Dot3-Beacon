@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/transparent"
+    android:cacheColorHint="@color/transparent"
+    >
+    <!--
+    android:paddingTop="6dp" android:paddingBottom="6dp"
+
+    android:background="@android:color/transparent"
+    android:cacheColorHint="@android:color/transparent"  
+    android:background="@color/black"
+    -->
+
+    <!--
+    Note: commonly used CustomArrayAdapter expects a list item layout ID parameter
+    (to be assigned to a ListView of the activity layout),
+    to have an ImageView with id: "imageView1".
+    -->
+    <ImageView android:id="@+id/imageView1"
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"
+        >
+        <!--
+        android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+
+        android:layout_gravity="center_horizontal"
+
+        android:scaleType="fitCenter" android:layout_weight="1"
+        android:src="@mipmap/world_aqua"
+        -->
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/textContents"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+            android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+        >
+
+        <!--
+        Note: commonly used CustomArrayAdapter expects a list item layout ID parameter
+        (to be assigned to a ListView of the activity layout),
+        with two or three TextViews with ids: "text1" and "text2", and may be "text3".
+        -->
+        <TextView
+            android:id="@+id/text1" 
+            android:text="TextView" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:textStyle="bold" 
+            
+            android:singleLine="false"
+            
+            android:textColor="@color/black"
+            >
+            <!--
+            android:singleLine="true"
+            -->
+        </TextView>
+        <TextView
+            android:id="@+id/text2" 
+            android:text="TextView" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            
+            android:singleLine="false"
+            
+            android:textColor="@color/grey50"
+
+            android:visibility="gone"
+            >
+            <!-- "gone" because it's for image URL, not to show -->
+            <!--
+            android:singleLine="true"
+                This just hides the TextView:
+                android:lines="0"
+            
+            android:textColor="@color/Blue"
+             
+            android:autoLink="web"
+            
+               android:scrollHorizontally="true"
+            android:singleLine="true"
+            -->
+        </TextView>
+        <TextView
+            android:id="@+id/text3"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:singleLine="false"
+
+            android:textColor="@color/grey50"
+            >
+        </TextView>
+
+
+        <!-- "ViewStub lets you lazily include other XML layouts inside your application at runtime."
+        <ViewStub android:id="@+id/stub1" android:layout_width="match_parent" android:layout_height="wrap_content"/> 
+        <ViewStub android:id="@+id/stub2" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        -->
+        
+    </LinearLayout>
+</LinearLayout>

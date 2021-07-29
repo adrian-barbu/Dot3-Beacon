@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="@dimen/actionbar_height"
+    
+    android:layout_marginBottom="2dip"
+
+    android:background="@color/white"
+    >
+    <!--
+    android:background="@drawable/main_header_selector"
+    -->
+    <!--
+    android:layout_height="wrap_content"
+    -->
+
+    <LinearLayout
+        android:layout_alignParentLeft="true"
+
+        android:orientation="horizontal"
+
+        android:id="@+id/actionbar_actionIcons"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_centerVertical="true"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        />
+    <!--
+    android:background="@color/actionbar_separator"
+    android:layout_height="fill_parent"
+    -->
+    <ImageView
+        android:layout_alignParentRight="true"
+
+        android:id="@+id/actionbar_home_logo"
+        
+        android:layout_width="44dip"
+        android:layout_height="44dip"
+        
+        android:padding="4dip"
+        />
+        <!--
+            We do NOT show button background on the logo, because logo isn't a button.
+        android:background="@drawable/actionbar_png_btn"
+        android:background="@drawable/actionbar_btn"
+        android:background="@drawable/button_background_blue"
+        android:background="@drawable/button_background_blue_2"
+            Also, see my note in res/layout/actionbar_icon.xml
+        
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" 
+        android:padding="0dip"
+        -->
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/actionbar_actionIcons"
+        android:layout_toLeftOf="@id/actionbar_home_logo"
+
+        android:id="@+id/actionbar_title"
+        
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content" 
+        android:layout_height="fill_parent"
+        
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" 
+        android:textSize="16dip"
+        android:textStyle="bold" 
+        android:textColor="@color/actionbar_background_end"
+        android:lines="1" 
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+         />
+        <!--
+        android:layout_toLeftOf="@id/actionbar_progress" 
+        android:textColor="@color/actionbar_title"
+        -->
+        
+    <ProgressBar 
+        android:layout_alignBottom="@id/actionbar_title"
+        android:layout_toRightOf="@id/actionbar_actionIcons"
+        android:layout_toLeftOf="@id/actionbar_home_logo"
+
+        android:id="@+id/actionbar_progress"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        
+        android:visibility="gone"
+        
+        android:layout_marginLeft="10dip" android:layout_marginRight="10dip" 
+        android:layout_marginTop="6dip" android:layout_marginBottom="6dip"
+        android:maxHeight="10dip" android:minHeight="10dip" 
+        
+        style="@android:style/Widget.ProgressBar.Horizontal" 
+        android:indeterminate="false"
+        android:indeterminateOnly="false"
+        />
+        <!--
+                        android:progressDrawable="@drawable/progress_drawable1_green"
+        -->
+        <!--
+        android:progressDrawable="@drawable/progress_drawable2_blue" 
+        
+        android:indeterminateOnly="true"
+        
+        style="@android:style/Widget.ProgressBar.Horizontal" 
+        style="?android:attr/progressBarStyleHorizontal"
+            [what's the difference?]
+         
+        android:layout_width="wrap_content"
+         
+        android:layout_below="@id/actionbar_title"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="???"
+        
+        android:layout_toLeftOf="@id/actionbar_actionIcons"
+        android:layout_centerVertical="true" 
+        android:paddingRight="7dip"
+        style="@android:style/Widget.ProgressBar.Large" 
+        style="@android:style/Widget.ProgressBar.Small" 
+        -->
+        
+</RelativeLayout>
+

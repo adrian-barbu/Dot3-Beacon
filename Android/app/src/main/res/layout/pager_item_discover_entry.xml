@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Image & Teaser Text -->
+
+    <RelativeLayout
+        android:id="@+id/layoutImageBased"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Image -->
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <!-- Teaser Text -->
+
+        <TextView
+            android:id="@+id/tvTeaserText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnMoreInfo"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="A fun and information way to explorer the Gardens"
+            android:textColor="@android:color/white"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Headline Layout -->
+
+        <RelativeLayout
+            android:id="@+id/layoutHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/discover_header"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!-- Entry Headline -->
+
+            <TextView
+                android:id="@+id/tvEntryHeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/ivShowDetailToggle"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="21sp" />
+
+            <!-- Up/Down Button -->
+
+            <ImageView
+                android:id="@+id/ivShowDetailToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_discover_toggle_up" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutHeadline"
+            android:background="@color/discover_text_bg"
+            android:clickable="true"
+            android:fillViewport="true">
+
+            <!-- Text -->
+
+            <TextView
+                android:id="@+id/tvEntryText"
+                style="@style/discover_teaser_text"
+                android:text="A fun and information way to explorer the Gardens" />
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

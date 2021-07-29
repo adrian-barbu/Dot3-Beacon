@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'dot3Android_alias'
+            keyPassword 'D3-prxmt-keystore'
+            storeFile file('/home/arkady/_dev/android/_Dot3/PrivateKeys-for-dot3Android-app/PrivateKey_release/dot3Android_release_key.keystore')
+            storePassword 'D3-prxmt-keystore'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.dot3digital"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 5
+        versionName "1.0"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+    productFlavors {
+    }
+
+    sourceSets {
+        main.java.srcDirs = ['src/main/java']
+        main.res.srcDirs = ['src/main/res']
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:22.2.0'
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:support-annotations:22.2.0'
+    compile 'com.firebase:firebase-client-android:2.3.0'
+    compile 'com.google.android.gms:play-services:7.5.0'
+    compile 'org.altbeacon:android-beacon-library:2+@aar'
+    compile project(':library')
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+}

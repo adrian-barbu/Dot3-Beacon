@@ -1,0 +1,6 @@
+framework module D3Framework {
+  umbrella header "D3Framework.h"
+
+  export *
+  module * { export * }
+}

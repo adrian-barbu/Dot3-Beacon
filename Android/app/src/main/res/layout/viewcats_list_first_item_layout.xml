@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:paddingBottom="3dp">
+
+    <!--
+    Note: commonly used CustomArrayAdapter expects a list item layout ID parameter
+    (to be assigned to a ListView of the activity layout),
+    to have an ImageView with id: "imageView1".
+    -->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/textContents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/viewCatTagline"
+            android:singleLine="false"
+            android:text="TextView"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white">
+            <!--
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:singleLine="true"
+            -->
+        </TextView>
+
+        <TextView
+            android:id="@+id/viewCatTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:singleLine="false"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

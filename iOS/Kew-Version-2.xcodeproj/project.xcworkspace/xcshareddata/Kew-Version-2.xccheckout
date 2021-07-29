@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>59C668E5-81F3-4ABD-8FDE-31237318747B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Kew-Version-2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2365425AAD1EEBF285A71DBCCD1299607B901C56</key>
+		<string>https://github.com/dougdot3/Kew-Version-2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Kew-Version-2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2365425AAD1EEBF285A71DBCCD1299607B901C56</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/dougdot3/Kew-Version-2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2365425AAD1EEBF285A71DBCCD1299607B901C56</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2365425AAD1EEBF285A71DBCCD1299607B901C56</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Kew-Version-2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

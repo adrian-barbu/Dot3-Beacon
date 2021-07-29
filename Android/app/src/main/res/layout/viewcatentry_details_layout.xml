@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--
+        Custom Title Bar: Hide the default title bar and include the ActionBarOldCustom as a View:
+    -->
+    <com.dot3digital.ui.actionbar.widget.ActionBarOldCustom
+        android:layout_alignParentTop="true"
+
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+    />
+
+    <LinearLayout
+        android:layout_below="@+id/actionBar" android:layout_above="@+id/toolBarContainer"
+
+        android:id="@+id/viewcatentry_details"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView android:id="@+id/imageView1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+            android:layout_gravity="center_horizontal"
+            />
+            <!--
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            -->
+
+        <TextView
+            android:id="@+id/text1"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:singleLine="false"
+
+            android:textColor="@color/black"
+
+            android:visibility="gone"
+            >
+            <!-- "gone" because it's for image URL, not to show -->
+        </TextView>
+
+        <Button
+            android:id="@+id/buttonViewOnMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View on Map"
+            android:onClick="onMyClick"
+        />
+
+        <TextView
+            android:id="@+id/text2"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+
+            android:singleLine="false"
+
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/text3"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:singleLine="false"
+
+            android:textColor="@color/grey50"
+            android:layout_marginLeft="5dp"
+            >
+            <!--
+            -->
+        </TextView>
+    </LinearLayout>
+
+    <include layout="@layout/toolbar"
+        android:layout_alignParentBottom="true"
+
+        android:id="@+id/toolBarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+</RelativeLayout>

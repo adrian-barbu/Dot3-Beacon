@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Entry Name -->
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/discover_header"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <!-- Entry Headline -->
+
+        <TextView
+            android:id="@+id/tvEntryHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Free daily walking tours"
+            android:textColor="@android:color/white"
+            android:textSize="23sp" />
+
+    </LinearLayout>
+
+    <!-- Image & Teaser Text -->
+
+    <RelativeLayout
+        android:id="@+id/layoutImageBased"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutHeader">
+
+        <!-- Image -->
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <!-- Teaser Text -->
+
+        <TextView
+            android:id="@+id/tvTeaserText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnMoreInfo"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="A fun and information way to explorer the Gardens"
+            android:textColor="@android:color/white"
+            android:textSize="19sp" />
+
+        <!-- More Info -->
+
+        <Button
+            android:id="@+id/btnMoreInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/discover_entry_view_more_selector"
+            android:padding="10dp"
+            android:text="@string/discover_entry_more_info"
+            android:textColor="@color/discover_header_transparent"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+
+    <!-- Text -->
+
+    <RelativeLayout
+        android:id="@+id/layoutTextBased"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutHeader"
+        android:background="@color/discover_text_bg"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnBack">
+
+            <!-- Text -->
+
+            <TextView
+                android:id="@+id/tvEntryText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="A fun and information way to explorer the Gardens"
+                android:textColor="@android:color/black"
+                android:textSize="19sp" />
+        </ScrollView>
+
+        <!-- Back -->
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/discover_entry_view_back_selector"
+            android:padding="10dp"
+            android:text="@string/discover_entry_back"
+            android:textColor="@color/discover_header_transparent"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+</RelativeLayout>
